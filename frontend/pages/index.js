@@ -22,8 +22,8 @@ const Home = () => {
     return (
         <div className="flex min-h-screen ">
             <header className="flex w-[250px] flex-col bg-[#0bb534] p-12">
-                <Profile setModalOpen={setTransactionQRModalOpen} avatar={avatar} userAddress={userAddress} setQrCode={setQrCode} />
-                <TransactionQRModal modalOpen={transactionQRModalOpen} setModalOpen={setTransactionQRModalOpen} userAddress={userAddress} setQrCode={setQrCode} myKey={publicKey} />
+                <Profile avatar={avatar} userAddress={userAddress} connected={connected} />
+                {/* <TransactionQRModal modalOpen={transactionQRModalOpen} setModalOpen={setTransactionQRModalOpen} userAddress={userAddress} setQrCode={setQrCode} myKey={publicKey} /> */}
 
                 <NavMenu connected={connected} publicKey={publicKey} />
 
@@ -32,7 +32,7 @@ const Home = () => {
             </header>
 
             <main className="flex flex-1 flex-col">
-                <SearchBar />
+                {/* <SearchBar /> */}
 
                 <TransactionsList connected={connected} transactions={transactions} />
             </main>

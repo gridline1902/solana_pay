@@ -21,6 +21,7 @@ const NewTransactionModal = ({ modalOpen, setModalOpen, addTransaction }) => {
     const onPay = async () => {
         await addTransaction({ amount, receiver, transactionPurpose })
         setAmount(0)
+        setModalOpen(false)
 
     }
 

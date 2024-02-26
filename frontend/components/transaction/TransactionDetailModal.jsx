@@ -16,7 +16,7 @@ const TransactionDetailModal = ({ currentTransaction, modalOpen, setModalOpen })
 
                 <TransactionMetadata
                     metadata={{
-                        amount: `${Number(currentTransaction?.amount).toFixed(2)} SOL`,
+                        amount: `${Number(currentTransaction?.amount).toFixed(4)} SOL`,
                         to: currentTransaction?.to.name,
                         from: currentTransaction?.from.name,
                     }}
@@ -51,7 +51,7 @@ const TransactionProfile = ({ name, handle, avatar, verified }) => {
 const TransactionDetails = ({ amount, description, transactionDate }) => {
     return (
         <div className="flex flex-col items-center justify-center space-y-4">
-            <h3 className="text-6xl">{Number(amount).toFixed(1)} SOL</h3>
+            <h3 className="text-6xl">{Number(amount).toFixed(4)} SOL</h3>
             <div className="flex flex-col items-center text-gray-400">
                 <p>{description}</p>
                 <p>
@@ -89,10 +89,10 @@ const TransactionMetadata = ({ metadata }) => {
 const TransactionFooter = () => {
     return (
         <div className="flex flex-col items-center justify-center text-sm text-gray-400">
-            <p>Block Inc.</p>
-            <p>1455 Market St. Suite 600</p>
-            <p>San Francisco. CA 94103</p>
-            <p>(800) 969-1940</p>
+            <p>NovaTech Ltd.</p>
+            <p>Online</p>
+            <p>Freetown</p>
+            <p>(+232) 76 80 46 72</p>
             <p>Privacy Notice</p>
         </div>
     )

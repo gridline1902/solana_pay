@@ -1,4 +1,4 @@
-import { ClockIcon, CurrencyDollarIcon, UserCircleIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
+import { ClockIcon, UserCircleIcon } from '@heroicons/react/24/outline'
 import { classNames } from '../../utils/classNames'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { truncate } from '../../utils/string'

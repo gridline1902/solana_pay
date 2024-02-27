@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     return (
         <div className="flex min-h-screen ">
-            <header className="flex w-[250px] flex-col bg-[#019863] p-12">
+            <header className="flex w-[250px] flex-col bg-[#F88379] p-12">
                 <Profile avatar={avatar} userAddress={userAddress} connected={connected} />
                 {/* <TransactionQRModal modalOpen={transactionQRModalOpen} setModalOpen={setTransactionQRModalOpen} userAddress={userAddress} setQrCode={setQrCode} myKey={publicKey} /> */}
 

@@ -14,8 +14,8 @@ const TransactionItem = ({ id, to, description, transactionDate, amount, toggleT
                 </div>
             </td>
 
-            <td className="px-6 py-4 text-sm text-gray-400">{description}</td>
-            <td className="px-6 py-4 text-sm text-gray-400">{format(new Date(transactionDate), 'MMM d')}</td>
+            <td className="px-6 py-4 text-sm text-gray-800">{description}</td>
+            <td className="px-6 py-4 text-sm text-gray-800">{format(new Date(transactionDate), 'MMM d')}</td>
             <td className="px-6 py-4 text-right text-sm font-medium text-gray-800">{amount} SOL</td>
         </tr>
     )

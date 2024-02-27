@@ -20,7 +20,7 @@ const TransactionsList = ({ connected, transactions }) => {
 
   return (
     <div>
-      <div className="bg-gray-200 px-9 pb-4 pt-10">
+      <div className="bg-[#A39E94] px-9 pb-4 pt-10">
         <p className="max-w-3xl px-10 text-3xl font-medium uppercase text-gray-600 xl:px-0">
           Transactions
         </p>
@@ -49,7 +49,7 @@ const TransactionsList = ({ connected, transactions }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="bg-[#A39E94] divide-y divide-gray-200">
                   {transactions.map(({ id, to, amount, description, transactionDate }) => (
                     <TransactionItem
                       key={id}

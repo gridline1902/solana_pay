@@ -1,5 +1,5 @@
 import HowItWorksCard from "../components/landing-page/how-it-works-card";
-import Link from 'next/link';
+import Link from "next/link";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 
@@ -16,7 +16,7 @@ const LandingPage = () => {
               className="h-8 w-auto rounded-full "
             />
           </div>
-            <h1 className="text-2xl font-bold">NovaPay</h1>
+          <h1 className="text-2xl font-bold">NovaPay</h1>
         </div>
 
         <div className="flex items-center px-4">
@@ -26,21 +26,19 @@ const LandingPage = () => {
               Get Started
             </button>
           </Link>
-  
         </div>
       </nav>
 
       {/* Picture */}
       <div className="my-8 flex items-start justify-center">
         <div className="flex flex-col items-start">
-          <div className="dark:bg-neutral-800 relative">
-            
+          <div className="relative dark:bg-neutral-800">
             <img
-              src="https://unblast.com/wp-content/uploads/2021/09/Working-Man-Illustration-1536x1152.jpg"
+              src="/landingPage/landingPageIllustration.jpg"
               alt="Picture"
-              className="max-w-3xl rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800"
+              className="bg-dark max-w-3xl rounded border p-1 dark:border-neutral-700 dark:bg-neutral-800"
             />
-            <div className="absolute inset-0 flex flex-col justify-center px-8">
+            {/* <div className="absolute inset-0 flex flex-col justify-center px-8">
               <h1 className="text-3xl font-extrabold">
                 Welcome to the future of freelance payments
               </h1>
@@ -49,29 +47,38 @@ const LandingPage = () => {
                 with your Solana wallet. Paying freelancers has never been
                 easier.
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="mt-4 max-w-xl">
-            <h1 className="text-4xl">Why choose NovaPay?</h1>
+          <div className="mt-8 max-w-xl">
+            <h1 className="text-4xl font-black">Why choose NovaPay?</h1>
           </div>
 
-          <div className="mt-4 max-w-xl">
-            <h1 className="text-sm">
-              We believe in a future where everyone has control over their own
-              money. That's why we built SolanaPay on Solana, a fast, secure,
-              and scalable blockchain.
+          <div className="mt-4 max-w-3xl tracking-wider leading-loose">
+            <h1 className="text-m">
+              Welcome to NovaPay, where you're in charge of your earnings. Our
+              platform is built on Solana, a fast, secure, and scalable
+              blockchain, empowering freelancers like you to take control of
+              your finances. With NovaPay, you have the freedom to track and
+              manage your payments seamlessly. Say goodbye to waiting for checks
+              to arrive or worrying about payment delays. Our innovative
+              platform ensures that your hard-earned money reaches you quickly
+              and securely. Join the future of finance with NovaPay on Solana.
+              Experience the convenience and reliability of blockchain
+              technology while enjoying the flexibility and autonomy you deserve
+              as a freelancer. Start managing your payments with NovaPay today
+              and unlock the full potential of your freelance career.
             </h1>
           </div>
 
           <div className="mt-6 max-w-xl">
-            <h1 className="text-2xl">How it works</h1>
+            <h1 className="text-2xl font-semibold">How it works</h1>
           </div>
 
           <div className="mt-6 grid max-w-3xl grid-cols-5 gap-4">
             <HowItWorksCard />
           </div>
           <div className="mt-6 max-w-xl">
-            <h1 className="text-2xl">Freelancer transaction list</h1>
+            <h1 className="text-2xl font-semibold">Freelancer transaction list</h1>
           </div>
 
           <div className="relative mt-6 w-full overflow-x-auto">
@@ -124,17 +131,25 @@ const LandingPage = () => {
             </table>
           </div>
           <div className="mt-8 flex w-full justify-center">
-            <div className="w-full flex justify-around">
+            <div className="flex w-full justify-around">
               <div>Terms of service</div>
               <div>Privacy User</div>
             </div>
           </div>
-          <div className="mt-8 flex w-full items-center justify-center space-x-8 h-96">
-            <button><FiTwitter /></button>
-            <button><FaWhatsapp /></button>
-            <button><FaInstagram /></button>
+          <div className="mt-8 flex h-5 w-full items-center justify-center space-x-8">
+            <button>
+              <FiTwitter />
+            </button>
+            <button>
+              <FaWhatsapp />
+            </button>
+            <button>
+              <FaInstagram />
+            </button>
           </div>
-            <div className="mt-4 flex w-full justify-center">&copy;2023 NovaPay</div>
+          <div className="mt-4 flex w-full justify-center">
+            &copy;2023 NovaPay
+          </div>
         </div>
       </div>
     </>

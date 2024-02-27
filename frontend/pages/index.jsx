@@ -53,8 +53,8 @@ const LandingPage = () => {
             <h1 className="text-4xl font-black">Why choose NovaPay?</h1>
           </div>
 
-          <div className="mt-4 max-w-3xl tracking-wider leading-loose">
-            <h1 className="text-m">
+          <div className="mt-4 max-w-3xl">
+            <h1 className="text-m text-gray-500 tracking-wider leading-loose">
               Welcome to NovaPay, where you're in charge of your earnings. Our
               platform is built on Solana, a fast, secure, and scalable
               blockchain, empowering freelancers like you to take control of

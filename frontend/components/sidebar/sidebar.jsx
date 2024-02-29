@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Profile from "../header/Profile";
 import NavMenu from "../header/NavMenu";
 import Action from "../header/Action";
-import NewTransactionModal from "../transaction/NewTransactionModal";
+import QuickPayTransactionModal from "../transaction/quick-pay/QuickPayTransactionModal";
 import { useWallet } from '@solana/wallet-adapter-react'
 import { useCashApp } from '../../hooks/cashapp'
 
@@ -29,8 +29,8 @@ export const SideBar = () => {
 
       <NavMenu connected={connected} publicKey={publicKey} />
 
-      <Action setModalOpen={setNewTransactionModalOpen} buttonText={"New Transaction"}/>
-      <NewTransactionModal
+      <Action setModalOpen={setNewTransactionModalOpen} buttonText={"Quick Pay"}/>
+      <QuickPayTransactionModal
         modalOpen={newTransactionModalOpen}
         setModalOpen={setNewTransactionModalOpen}
         addTransaction={doTransaction}

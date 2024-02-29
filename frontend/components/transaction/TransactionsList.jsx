@@ -24,7 +24,7 @@ const TransactionsList = ({ connected, transactions }) => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {connected ? (
           <>
-            <div className="overflow-x-auto pt-8">
+            <div className="overflow-x-auto pt-8 -scroll-my-16">
               <table className="w-full divide-y divide-gray-200 border">
                 <thead className="bg-gray-100">
                   <tr>

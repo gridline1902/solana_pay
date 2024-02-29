@@ -1,17 +1,19 @@
 import { useCashApp } from "../../hooks/cashapp";
 import Action from "../header/Action";
-import QuickPayTransactionModal from "../transaction/quick-pay/QuickPayTransactionModal";
+import GumaTransactionProcessModal from "../transaction/services/GumaTransactionProcessModal";
 
 const services = [
   {
     plan: "Guma Valley",
     items: ["Pay Water Bill"],
-    address: "12346"
+    address: "38TJVyCibbmqw4FhX5XTnrHFBzXGjKBwNCRGkciLZtW6",
+    placeholder: "Please enter your Account Number"
   },
   {
     plan: "Insurance",
     items: ["Pay Car Insurance", "Pay House Insurance"],
-    address: "1233"
+    address: "38TJVyCibbmqw4FhX5XTnrHFBzXGjKBwNCRGkciLZtW6",
+    placeholder: "Please enter your SLICO account Number"
   }
 ];
 
@@ -25,7 +27,7 @@ const ServicesCard = () => {
   );
 };
 
-const ServiceCardItem = ({ plan, items, address }) => {
+const ServiceCardItem = ({ plan, items, address, placeholder }) => {
   const { setNewTransactionModalOpen, newTransactionModalOpen, doTransaction } =
     useCashApp();
   return (
@@ -71,11 +73,12 @@ const ServiceCardItem = ({ plan, items, address }) => {
           />
         </div>
       </div>
-      <QuickPayTransactionModal
+      <GumaTransactionProcessModal
         defaultReceiver={address}
         modalOpen={newTransactionModalOpen}
         setModalOpen={setNewTransactionModalOpen}
         addTransaction={doTransaction}
+        placeholder={placeholder}
       />
     </div>
   );

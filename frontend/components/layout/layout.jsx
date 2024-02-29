@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col md:flex-row">
       <SideBar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 h-screen overflow-y-scroll">{children}</main>
     </div>
   );
 };

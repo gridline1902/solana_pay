@@ -19,7 +19,7 @@ export const SideBar = () => {
     newTransactionModalOpen,
   } = useCashApp();
   return (
-    <header className="flex flex-col bg-[#F88379] p-12 md:w-[250px]">
+    <header className="flex flex-col dark:bg-[#3e1f24] p-12 md:w-[250px]">
       <Profile
         avatar={avatar}
         userAddress={userAddress}
@@ -29,7 +29,7 @@ export const SideBar = () => {
 
       <NavMenu connected={connected} publicKey={publicKey} />
 
-      <Action setModalOpen={setNewTransactionModalOpen} />
+      <Action setModalOpen={setNewTransactionModalOpen} buttonText={"New Transaction"}/>
       <NewTransactionModal
         modalOpen={newTransactionModalOpen}
         setModalOpen={setNewTransactionModalOpen}

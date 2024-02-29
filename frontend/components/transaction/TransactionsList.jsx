@@ -19,19 +19,8 @@ const TransactionsList = ({ connected, transactions }) => {
     setModalOpen(value);
   };
 
-  const header = [
-    {
-      heading: "Transactions",
-      subHeading: "List of all transactions",
-    },
-  ];
   return (
-    <div>
-      {
-        header.map((item, index) => (
-          <MainScreenHeader key={index} {...item} />
-        ))
-      }
+    <>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {connected ? (
           <>
@@ -53,7 +42,7 @@ const TransactionsList = ({ connected, transactions }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200 bg-[#A39E94]">
+                <tbody className="divide-y divide-gray-200 ">
                   {transactions.map(
                     ({ id, to, amount, description, transactionDate }) => (
                       <TransactionItem
@@ -86,7 +75,7 @@ const TransactionsList = ({ connected, transactions }) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

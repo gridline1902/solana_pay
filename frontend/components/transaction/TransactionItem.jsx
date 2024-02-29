@@ -6,7 +6,7 @@ const TransactionItem = ({ id, to, description, transactionDate, amount, toggleT
     }
 
     return (
-        <tr onClick={onItemClick} className="cursor-pointer hover:bg-gray-50">
+        <tr onClick={onItemClick} className="cursor-pointer hover:bg-[#ddc490]">
             <td className="px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center space-x-4">                 
                     <img className="h-8 w-8 rounded-full object-cover" src={to.avatar} alt="" /> 

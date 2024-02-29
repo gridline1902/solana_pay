@@ -15,9 +15,10 @@ input::-webkit-inner-spin-button {
 
 .phantom-button:hover {
     background-color: transparent !important;
+    color: #194b38;
 }
 
 .phantom-button:hover > .wallet-adapter-button-start-icon > svg,
 .phantom-button:hover > span {
-    color: rgb(243 244 246) !important;
-}
+    color: #194b38 !important;
+} 

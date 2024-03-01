@@ -12,7 +12,7 @@ const Profile = ({ avatar, userAddress, connected }) => {
             <div className="flex flex-col items-center space-y-1">
                 <p className="font-semibold text-white">{truncate(userAddress)}</p>
 
-                <p className="text-sm font-light italic text-gray-100">${truncate(userAddress)}</p>
+                <p className="pb-12 text-sm font-light italic text-gray-100">${truncate(userAddress)}</p>
             </div>
 
                 </>

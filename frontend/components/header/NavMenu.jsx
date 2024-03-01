@@ -18,7 +18,7 @@ const NavMenu = ({ connected, publicKey }) => {
     },
     {
       icon: WrenchScrewdriverIcon,
-      item: "Services",
+      item: "Services - (beta)",
       path: "/services",
     },
   ];
